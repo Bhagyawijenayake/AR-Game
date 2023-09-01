@@ -30,12 +30,12 @@ public class BallController : MonoBehaviour
 
     void OnEnable()
     {
-        PlaceObjectOnPlane.OnPlacedObject += BallInit;
+        PlaceObjectOnPlane.onPlacedObject += BallInit;
     }
 
     void OnDisable()
     {
-        PlaceObjectOnPlane.OnPlacedObject -= BallInit;
+        PlaceObjectOnPlane.onPlacedObject -= BallInit;
     }
 
     void Update()
